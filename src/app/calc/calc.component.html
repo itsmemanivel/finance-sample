@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row ">
+        <section>
+            <a routerLink="/home">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <span style="padding-left: 10px;">back</span>
+            </a>
+        </section>
+    </div>
+
+
+
+    <main>
+        <section class="grid-container ">
+
+
+
+            <div class="calc">
+
+                <div class="loan">
+                    <p>Loan amount</p>
+                    <input type="numer" [(ngModel)]="loan">
+                </div>
+                <div class="rate-of-interest">
+                    <p>Rate of interest</p>
+                    <input type="numer" [(ngModel)]="interest">
+                </div>
+                <div class="no-of-months">
+                    <p>No:of months</p>
+                    <input type="numer" [(ngModel)]="months">
+                </div><br><br>
+
+                <button (click)="calc(loan,interest,months)" style="width: 90%;" class="btn  btn-block btn-sm">Calculate</button>
+
+            </div>
+
+            <div class="total-pay">
+
+                <div class="emi">
+                    <p>EMI</p>
+                    <h2>{{emi}}</h2>
+                </div>
+                <div class="total">
+                    <p>Total amount payable</p>
+                    <h2>{{totalpay}}</h2>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+</div>

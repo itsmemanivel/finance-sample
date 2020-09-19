@@ -1,0 +1,286 @@
+<div class="container">
+
+
+
+    <main *ngIf="client">
+
+        <section class="banner">
+            <div class="rolling-banner">
+                <h4><span style="color: black;"> Can buy gold at price of silver right now | </span><span style="color: #E06EA7;">Get our new gold loan Scheme and Silver.</span></h4>
+            </div>
+        </section>
+        <div class="username">
+            {{username}}<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+        </div> <br><br><br>
+        <section class="grid-container ">
+
+
+
+            <div class="schemes">
+                <h3>Schemes</h3>
+                <div class="scheme-list">
+
+                    <div class="list-1 card">
+                        <div class="head">
+                            <h5>New</h5>
+                            <p>view more</p>
+                        </div>
+                        <div class="content">
+                            <p>1. Can buy gold at price of silver right now.</p>
+                            <p>2. Buy gold using our scheme and buy happiness for your whole family.</p>
+                        </div>
+                    </div>
+                    <div *ngIf="locality === 'Dharmapuri'" class="list-2  card">
+
+                        <div class="head">
+                            <h5>Dharmapuri</h5>
+                            <p style="cursor:pointer" data-toggle="modal" data-target="#staticBackdrop">change locality</p>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Change Locality</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group">
+                                                <select data-dismiss="modal" [(ngModel)]="locality" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                  <option selected>Dharmapuri</option>
+                                                  <option  value="Hosur">Hosur</option>
+                                                  <option value="Karur">Karur</option>
+                                                  <option value="Vellore">Vellore</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" (click)="chnLoc()" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="content">
+                            <p>1. Low interest rate for home loan for dharmapurians.</p>
+                            <p>2. Dharmapuri 75th anniversary special plan.</p>
+                        </div>
+                    </div>
+
+
+                    <div *ngIf="locality == 'Hosur'" class="list-2  card">
+
+                        <div class="head">
+                            <h5>Hosur</h5>
+                            <p style="cursor:pointer" data-toggle="modal" data-target="#exampleModal">change locality</p>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Change Locality</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group">
+                                                <select [(ngModel)]="locality" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                  <option selected>Dharmapuri</option>
+                                                  <option  value="Hosur">Hosur</option>
+                                                  <option value="Karur">Karur</option>
+                                                  <option value="Vellore">Vellore</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" (click)="chnLoc()" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>1. Negotiable loan and low interest for home loan for Hosurians.</p>
+                            <p>2. Hosur 75th anniversary special plan.</p>
+                        </div>
+                    </div>
+
+                    <div *ngIf="locality == 'Karur'" class="list-2  card">
+
+                        <div class="head">
+                            <h5>Karur</h5>
+                            <p style="cursor:pointer" data-toggle="modal" data-target="#exampleModal">change locality</p>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Change Locality</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group">
+                                                <select data-dismiss="modal" [(ngModel)]="locality" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                  <option selected>Dharmapuri</option>
+                                                  <option  value="Hosur">Hosur</option>
+                                                  <option value="Karur">Karur</option>
+                                                  <option  value="Vellore">Vellore</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" (click)="chnLoc()" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>1. Acceptable price with home loan for Karurians.</p>
+                            <p>2. Karur 75th anniversary special plan.</p>
+                        </div>
+                    </div>
+
+                    <div *ngIf="locality == 'Vellore'" class="list-2  card">
+
+                        <div class="head">
+                            <h5>Vellore</h5>
+                            <p style="cursor:pointer" data-toggle="modal" data-target="#exampleModal">change locality</p>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Change Locality</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group">
+                                                <select [(ngModel)]="locality" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                  <option selected>Dharmapuri</option>
+                                                  <option  value="Hosur">Hosur</option>
+                                                  <option value="Karur">Karur</option>
+                                                  <option value="Vellore">Vellore</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" (click)="chnLoc()" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>1. valuable interest rate for home loan for vellorians.</p>
+                            <p>2. Vellore 75th anniversary special plan.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="calc">
+                <h3>Calculator</h3>
+                <div class="list">
+                    <h3 style="outline: 0;" routerLink="/home-loan-calculator">Home Loan calculator</h3>
+                    <h3>Gold Loan calculator</h3>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <main *ngIf="!client">
+
+        <section class="table">
+            <div class="username">
+                {{username}}<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+            </div>
+
+            <br><br><br>
+            <table border="1">
+                <tr>
+                    <th>SCHEME</th>
+                    <th>TOWN</th>
+                    <th>STATUS</th>
+                    <th>OPERATION</th>
+                </tr>
+
+                <tr>
+                    <td>Can buy gold at price of silver right now</td>
+                    <td>Dharmapuri</td>
+                    <td>ONLINE</td>
+                    <td><button>Add</button><button>Delete</button></td>
+
+                </tr>
+                <tr>
+                    <td>Buy gold using our scheme and buy happiness for ...</td>
+                    <td>Dharmapuri</td>
+                    <td>ONLINE</td>
+                    <td><button>Add</button><button>Delete</button></td>
+
+                </tr>
+                <tr>
+                    <td>Low interest rate for home loan for dharmapurians.</td>
+                    <td>Dharmapuri</td>
+                    <td>ONLINE</td>
+                    <td><button>Add</button><button>Delete</button></td>
+
+                </tr>
+                <tr>
+                    <td>Dharmapuri 75th anniversary special plan.</td>
+                    <td>Dharmapuri</td>
+                    <td>ONLINE</td>
+                    <td><button>Add</button><button>Delete</button></td>
+
+                </tr>
+                <tr>
+                    <td>Low interest rate for home loan for dharmapurians.</td>
+                    <td>Hosur</td>
+                    <td>ONLINE</td>
+                    <td><button>Add</button><button>Delete</button></td>
+
+                </tr>
+                <tr>
+                    <td>Hosur 75th anniversary special plan.</td>
+                    <td>Hosur</td>
+                    <td>ONLINE</td>
+                    <td><button>Add</button><button>Delete</button></td>
+
+                </tr>
+            </table>
+            <button class="btn btn-primary">save</button>
+
+        </section>
+
+
+    </main><br><br><br><br>
+
+
+
+
+
+</div>

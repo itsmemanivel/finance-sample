@@ -1,0 +1,52 @@
+nav {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: -50px;
+}
+
+a:focus {
+    background-color: white;
+}
+
+a:last-child:focus {
+    background-color: #E06EA7;
+    color: white
+}
+
+a:first-child:hover {
+    background-color: white;
+    color: #E06EA7 !important;
+    cursor: pointer;
+}
+
+a:last-child:hover {
+    background-color: #E06EA7;
+    color: white !important;
+    cursor: pointer;
+}
+
+a:first-child:active {
+    background-color: white;
+    color: #E06EA7 !important;
+}
+
+a:last-child:active {
+    background-color: #E06EA7;
+    color: white !important;
+}
+
+.navbar {
+    position: relative;
+    padding-bottom: -300px !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.158);
+}
+
+nav>.menu-inline>a {
+    display: inline;
+}
+
+nav>.menu-inline>a:last-child {
+    border: 1px solid #E06EA7;
+    border-radius: 5px;
+}
